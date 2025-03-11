@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    margin-bottom: 20px;
+  }
+  
+  .banner {
+    height: 400px;
+    overflow: hidden;
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center; 
+    padding: 0 10%;  /* Añade padding horizontal para controlar el ancho */
+  }
+  
+  .container {
+    margin-top: 20px;
+  }
+  
+  button,
+  .btn {
+    margin: 5px;
+  }
+  
+  .modo-1 {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .modo-2 {
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  .modo-3 {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+.top-bar {
+    background-color: #030303; 
+    color: #fff;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 1rem;
+  }
+  
+  .window-controls {
+    position: absolute; 
+    left: 1rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .circle-1 {
+    background-color: #352c2c;
+  }
+  .circle-2 {
+    background-color: #352c2c;
+  }
+  .circle-3 {
+    background-color: #352c2c;
+  }
+  
+  .top-bar .title {
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+#secondBar {
+    border-top: 1px solid #080101 !important;
+    border-bottom: 1px solid #080101 !important;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .navbar-nav {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  
+  #navbarNav {
+    padding-left: 0;
+  }
+  
+#registroForm {
+    max-width: 900px; 
+    margin: 0 auto;   
+  }
+  
+  /* Eliminamos esta segunda definición duplicada que puede causar conflictos */
+  /*
+  .carousel-item img {
+    object-fit: cover;
+    height: 500px; 
+  }
+  */
+
+/* Controladores del carrusel más visibles */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  opacity: 0.8;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Mejores indicadores */
+.carousel-indicators {
+  bottom: 20px;
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+/* Estilos para las tarjetas de productos */
+.card {
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 0 15px;
+}
+
+.card-text {
+  padding: 0 15px;
+  flex-grow: 1;
+}
+
+.card-body {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+/* Ajuste específico para el botón de compra */
+.card .btn-primary {
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para la sección de empleados */
+.employee-card {
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.employee-card:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.employee-img {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.employee-img:hover {
+  transform: scale(1.05);
+}
+
+.employee-info {
+  padding: 15px;
+}
+
+.employee-info h5 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.employee-info p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin-right: 5px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #e9ecef;
+  transform: translateY(-2px);
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 767.98px) {
+  .employee-card .row {
+    text-align: center;
+  }
+  
+  .employee-info, .employee-info.text-md-end {
+    text-align: center !important;
+    margin-top: 15px;
+  }
+}
